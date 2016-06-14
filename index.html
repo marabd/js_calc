@@ -1,0 +1,48 @@
+<html>
+<head>
+	<link rel='stylesheet' href='stylesheets/style.css' type='text/css' />
+	<script type='text/javascript' src='javascripts/app.js'></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+</head>
+<body class='cen'>
+	<div class='container'>
+		<h1 class='cen'>JavaScript Calculator</h1>
+		
+		<p id='display' class='cen'></p>
+		
+		<br />
+		<div class='row'>
+			<button id='one' class='col s2 offset-s2 waves-effect waves-light btn-large' onClick='number(1)'>1</button>
+			<button id='two' class='col s2 waves-effect waves-light btn-large' onClick='number(2)'>2</button>
+			<button id='three' class='col s2 waves-effect waves-light btn-large' onClick='number(3)'>3</button>
+			<button id='addition' class='col s2 waves-effect waves-light btn-large' onClick='operator("+");'>+</button>
+		</div>
+		<div class='row'>
+			<button id='four' class='col s2 offset-s2 waves-effect waves-light btn-large' onClick='number(4)'>4</button>
+			<button id='five' class='col s2 waves-effect waves-light btn-large' onClick='number(5)'>5</button>
+			<button id='six' class='col s2 waves-effect waves-light btn-large' onClick='number(6)'>6</button>
+			<button id='subtraction' class='col s2 waves-effect waves-light btn-large' onClick='operator("-");'>-</button>
+		</div>
+		<div class='row'>
+			<button id='seven' class='col s2 offset-s2 waves-effect waves-light btn-large' onClick='number(7)'>7</button>
+			<button id='eight' class='col s2 waves-effect waves-light btn-large' onClick='number(8)'>8</button>
+			<button id='nine' class='col s2 waves-effect waves-light btn-large' onClick='number(9)'>9</button>
+			<button id='multiplication' class='col s2 waves-effect waves-light btn-large' onClick='operator("*");'>*</button>
+		</div>
+		<div class='row'>
+			<button id='zero' class='col s2 offset-s2 waves-effect waves-light btn-large' onClick='number(0)'>0</button>
+			<button class='col s2 waves-effect waves-light btn-large' onClick='submitNumber();'>submit</button>
+			<button id='clear' class='col s2 waves-effect waves-light btn-large' onClick='operator("c");'>c</button>
+			<button id='division' class='col s2 waves-effect waves-light btn-large' onClick='operator("/");'>/</button>
+		</div>
+
+	</div>
+</body>
+</html>
+
+
+
+
